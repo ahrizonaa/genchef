@@ -12,7 +12,7 @@
 <ion-content [fullscreen]="true">
   <ion-item>
     <ion-label position="floating">Search ingredients</ion-label>
-    <ion-input (ionChange)="searchQueried()" [(ngModel)]="searchQuery" debounce="500"
+    <ion-input clearInput="true" (ionChange)="searchQueried()" [(ngModel)]="searchQuery" debounce="500"
       placeholder="Enter text"></ion-input>
   </ion-item>
 
