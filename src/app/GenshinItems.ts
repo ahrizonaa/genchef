@@ -12,10 +12,6 @@ const GenshinItems = [
     item: 'Bird_Egg',
   },
   {
-    src: 'https://static.wikia.nocookie.net/gensin-impact/images/1/19/Item_Dizziness-Be-Gone_no_Jutsu_Version_2.0.png/revision/latest?cb=20210808221337',
-    item: 'Dizziness-Be-Gone_no_Jutsu',
-  },
-  {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/e/ef/Item_Fish.png/revision/latest?cb=20210109214830',
     item: 'Fish',
   },

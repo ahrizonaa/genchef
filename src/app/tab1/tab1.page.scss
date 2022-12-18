@@ -16,11 +16,25 @@
   border: 4px solid black;
   border-radius: 10px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.genshin-item-image {
+  height: 80%;
+  aspect-ratio: 1 / 1;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+}
+.genshin-item-text {
   overflow-wrap: break-word;
+  text-align: center;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: no-wrap;
+  overflow: hidden;
+  font-size: 12px;
 }

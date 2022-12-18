@@ -12,9 +12,10 @@
 <ion-content [fullscreen]="true">
 
   <div class="item-list-container">
-    <div class="genshin-item" *ngFor="let item of genshinItems"
-      [style.backgroundImage]="'url(../../assets/genshin-item-images/' + item.item + '.png)'">
-      <span style="text-align: center">{{ item.item.split('_').join(' ') }}</span>
+    <div class="genshin-item" *ngFor="let item of genshinItems">
+      <div class="genshin-item-image"
+        [style.backgroundImage]="'url(../../assets/genshin-item-images/' + item.item + '.png)'"></div>
+      <div class="genshin-item-text">{{ item.item.split('_').join(' ') }}</div>
     </div>
   </div>
 </ion-content>
