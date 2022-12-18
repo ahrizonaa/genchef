@@ -8,5 +8,17 @@ import GenshinItems from '../GenshinItems';
 })
 export class Tab1Page {
   genshinItems = GenshinItems;
+  genshinItemCache = this.genshinItems;
+  searchQuery = '';
   constructor() {}
+
+  searchQueried() {
+    if (this.searchQuery == '') {
+      this.genshinItems = GenshinItems;
+    } else {
+      this.genshinItems = GenshinItems.filter((each) => {
+        return each.item.toLowerCase().includes(this.searchQuery.toLowerCase());
+      });
+    }
+  }
 }

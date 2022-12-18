@@ -11,9 +11,11 @@
 
 <ion-content [fullscreen]="true">
   <ion-item>
-    <ion-label position="floating">Search</ion-label>
-    <ion-input placeholder="Enter text"></ion-input>
+    <ion-label position="floating">Search ingredients</ion-label>
+    <ion-input (ionChange)="searchQueried()" [(ngModel)]="searchQuery" debounce="500"
+      placeholder="Enter text"></ion-input>
   </ion-item>
+
   <div class="item-list-container">
     <div class="genshin-item" *ngFor="let item of genshinItems">
       <div class="genshin-item-image"
