@@ -1,0 +1,26 @@
+.item-list-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.genshin-item {
+  width: 22%;
+  aspect-ratio: 1 / 1;
+  margin: 5px;
+  border: 4px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow-wrap: break-word;
+}

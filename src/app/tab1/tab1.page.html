@@ -11,5 +11,10 @@
 
 <ion-content [fullscreen]="true">
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div class="item-list-container">
+    <div class="genshin-item" *ngFor="let item of genshinItems"
+      [style.backgroundImage]="'url(../../assets/genshin-item-images/' + item.item + '.png)'">
+      <span style="text-align: center">{{ item.item.split('_').join(' ') }}</span>
+    </div>
+  </div>
 </ion-content>
