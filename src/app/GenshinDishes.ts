@@ -9,8 +9,8 @@ export class GenshinDish {
 
 export const GenshinDishes: GenshinDish[] = [
   {
-    src: 'https://static.wikia.nocookie.net/gensin-impact/images/e/e3/Item_%22Pile_%27Em_Up%22.png/revision/latest/scale-to-width-down/45?cb=20210415145821',
-    name: '"Pile \'Em Up"',
+    src: 'https://static.wikia.nocookie.net/gensin-impact/images/e/e3/Item_Pile_Em_Up.png/revision/latest/scale-to-width-down/45?cb=20210415145821',
+    name: 'Pile Em Up',
     stars: '3 Stars',
     effect_title: 'CRIT Rate Up',
     type: 'ATK-Boosting Dishes',
@@ -694,7 +694,7 @@ export const GenshinDishes: GenshinDish[] = [
     description: 'Restores 60 Stamina.',
   },
   {
-    src: 'https://static.wikia.nocookie.net/gensin-impact/images/7/71/Item_Delicious_Triple-Layered_Consomm%C3%A9.png/revision/latest/scale-to-width-down/45?cb=20210415183048',
+    src: 'https://static.wikia.nocookie.net/gensin-impact/images/7/71/Item_Delicious_Triple-Layered_Consomm.png/revision/latest/scale-to-width-down/45?cb=20210415183048',
     name: 'Lantern Rite Special Triple-Layered Consomm',
     stars: '3 Stars',
     effect_title: 'DEF Up',
@@ -1355,7 +1355,7 @@ export const GenshinDishes: GenshinDish[] = [
       'Restores 30~34% of Max HP and an additional 600~1,900 HP to the selected character.',
   },
   {
-    src: 'https://static.wikia.nocookie.net/gensin-impact/images/b/be/Item_Triple-Layered_Consomm%C3%A9.png/revision/latest/scale-to-width-down/45?cb=20210415145658',
+    src: 'https://static.wikia.nocookie.net/gensin-impact/images/b/be/Item_Triple-Layered_Consomm.png/revision/latest/scale-to-width-down/45?cb=20210415145658',
     name: 'Triple-Layered Consomm',
     stars: '3 Stars',
     effect_title: 'DEF Up',
