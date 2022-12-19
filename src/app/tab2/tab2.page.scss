@@ -1,8 +1,44 @@
-.recipes-viewport {
+.item-list-container {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow-y: auto;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // align-items: center;
+}
+
+.genshin-item {
+  width: 22%;
+  max-height: 75px;
+  max-width: 75px;
+  aspect-ratio: 1 / 1;
+  margin: 5px;
+  border: 2px solid #999 !important;
+  background-color: #222 !important;
+  border-radius: 10px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.genshin-item-image {
+  height: 80%;
+  aspect-ratio: 1 / 1;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.genshin-item-text {
+  overflow-wrap: break-word;
+  text-align: center;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: no-wrap;
+  overflow: hidden;
+  font-size: 1.5vw;
 }

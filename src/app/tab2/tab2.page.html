@@ -16,7 +16,11 @@
       placeholder="Enter text"></ion-input>
   </ion-item>
 
-  <div class="recipes-viewport">
-    <h1>coming soon</h1>
+  <div class="item-list-container">
+    <div class="genshin-item" *ngFor="let item of genshinDishes">
+      <div class="genshin-item-image"
+        [style.backgroundImage]="'url(../../assets/genshin-food-images/' + item.name + '.png)'"></div>
+      <div class="genshin-item-text">{{ item.name.split('_').join(' ') }}</div>
+    </div>
   </div>
 </ion-content>
