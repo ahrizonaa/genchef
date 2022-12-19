@@ -1,4 +1,4 @@
-const GenshinItems = [
+const GenshinIngredients = [
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/0/04/Item_Rice.png/revision/latest?cb=20210109215752',
     item: 'Rice',
@@ -889,4 +889,4 @@ const GenshinItems = [
   },
 ];
 
-export default GenshinItems;
+export default GenshinIngredients;

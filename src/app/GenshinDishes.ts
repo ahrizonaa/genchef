@@ -1,4 +1,13 @@
-const GenshinDishes = [
+export class GenshinDish {
+  src: string = '';
+  name: string = '';
+  stars: string = '';
+  effect_title: string = '';
+  type: string = '';
+  description: string = '';
+}
+
+export const GenshinDishes: GenshinDish[] = [
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/e/e3/Item_%22Pile_%27Em_Up%22.png/revision/latest/scale-to-width-down/45?cb=20210415145821',
     name: '"Pile \'Em Up"',
@@ -18,6 +27,7 @@ const GenshinDishes = [
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Activated_Starshroom.png/revision/latest/scale-to-width-down/45?cb=20220827114923',
     name: 'Activated Starshroom',
+    stars: '',
     effect_title: 'Healing',
     type: 'Recovery Dishes',
     description: 'Restores 800 HP.',
@@ -59,6 +69,7 @@ const GenshinDishes = [
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Item_Apple.png/revision/latest/scale-to-width-down/45?cb=20210113032853',
     name: 'Apple',
+    stars: '',
     effect_title: 'Healing',
     type: 'Recovery Dishes',
     description: 'Restores 300 HP.',
@@ -544,8 +555,9 @@ const GenshinDishes = [
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Item_Holy_Water.png/revision/latest/scale-to-width-down/45?cb=20201126234926',
     name: 'Holy Water',
     stars: '3 Stars',
+    effect_title: '',
     type: 'Recovery Dishes',
-    description: '\u00e2\u20ac\u2039',
+    description: '',
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/f/f0/Item_Imported_Poultry.png/revision/latest/scale-to-width-down/45?cb=20210723065349',
@@ -683,7 +695,7 @@ const GenshinDishes = [
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/7/71/Item_Delicious_Triple-Layered_Consomm%C3%A9.png/revision/latest/scale-to-width-down/45?cb=20210415183048',
-    name: 'Lantern Rite Special Triple-Layered Consomm\u00c3\u00a9',
+    name: 'Lantern Rite Special Triple-Layered Consomm',
     stars: '3 Stars',
     effect_title: 'DEF Up',
     type: 'DEF-Boosting Dishes',
@@ -737,6 +749,7 @@ const GenshinDishes = [
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Item_Milky_Mushroom_Crisp_Tower.png/revision/latest/scale-to-width-down/45?cb=20220826002135',
     name: 'Milky Mushroom Crisp Tower',
     stars: '3 Stars',
+    effect_title: '',
     type: 'Recovery Dish',
     description:
       'Restores 30~34% of Max HP and an additional 600~1,900 HP to the selected character.',
@@ -842,7 +855,7 @@ const GenshinDishes = [
     effect_title: 'DEF Up',
     type: 'DEF-Boosting Dishes',
     description:
-      'Increases all party members\u00e2\u20ac\u2122 DEF by 88~126 for 300s. In Co-Op Mode, this effect only applies to your own character(s).',
+      'Increases all party members DEF by 88~126 for 300s. In Co-Op Mode, this effect only applies to your own character(s).',
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/e/e2/Item_Mushroom_Pizza.png/revision/latest/scale-to-width-down/45?cb=20210415133922',
@@ -1086,6 +1099,7 @@ const GenshinDishes = [
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8b/Item_Scorched_Starshroom.png/revision/latest/scale-to-width-down/45?cb=20220827114922',
     name: 'Scorched Starshroom',
+    stars: '',
     effect_title: 'Healing',
     type: 'Recovery Dishes',
     description: 'Restores 1 HP.',
@@ -1155,6 +1169,7 @@ const GenshinDishes = [
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Item_Starshroom.png/revision/latest/scale-to-width-down/45?cb=20220330031844',
     name: 'Starshroom',
+    stars: '',
     effect_title: 'Healing',
     type: 'Recovery Dishes',
     description: 'Restores 300 HP.',
@@ -1230,6 +1245,7 @@ const GenshinDishes = [
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Item_Sunsettia.png/revision/latest/scale-to-width-down/45?cb=20210109214706',
     name: 'Sunsettia',
+    stars: '',
     effect_title: 'Healing',
     type: 'Recovery Dishes',
     description: 'Restores 300 HP.',
@@ -1264,6 +1280,7 @@ const GenshinDishes = [
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/4/49/Item_Tahchin.png/revision/latest/scale-to-width-down/45?cb=20220825090812',
     name: 'Tahchin',
     stars: '3 Stars',
+    effect_title: '',
     type: 'Recovery Dishes',
     description:
       'Restores 26~30% of Max HP to the selected character and regenerates 450~790 HP every 5s for 30s.',
@@ -1339,7 +1356,7 @@ const GenshinDishes = [
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/b/be/Item_Triple-Layered_Consomm%C3%A9.png/revision/latest/scale-to-width-down/45?cb=20210415145658',
-    name: 'Triple-Layered Consomm\u00c3\u00a9',
+    name: 'Triple-Layered Consomm',
     stars: '3 Stars',
     effect_title: 'DEF Up',
     type: 'DEF-Boosting Dishes',
@@ -1431,5 +1448,3 @@ const GenshinDishes = [
       "Decreases all party members' climbing and sprinting Stamina consumption by 15~25% for 900s.",
   },
 ];
-
-export default GenshinDishes;

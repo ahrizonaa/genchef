@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import GenshinItems from '../GenshinItems';
+import GenshinIngredients from '../GenshinIngredients';
 
 @Component({
   selector: 'app-tab1',
@@ -7,16 +7,15 @@ import GenshinItems from '../GenshinItems';
   styleUrls: ['tab1.page.scss'],
 })
 export class Tab1Page {
-  genshinItems = GenshinItems;
-  genshinItemCache = this.genshinItems;
+  genshinItems = GenshinIngredients;
   searchQuery = '';
   constructor() {}
 
   searchQueried() {
     if (this.searchQuery == '') {
-      this.genshinItems = GenshinItems;
+      this.genshinItems = GenshinIngredients;
     } else {
-      this.genshinItems = GenshinItems.filter((each) => {
+      this.genshinItems = GenshinIngredients.filter((each) => {
         return each.item.toLowerCase().includes(this.searchQuery.toLowerCase());
       });
     }
