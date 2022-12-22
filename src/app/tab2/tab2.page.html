@@ -17,7 +17,8 @@
   </ion-item>
 
   <div class="item-list-container">
-    <div class="genshin-item" *ngFor="let item of genshinDishes">
+    <div #ref ngClass="item.selected ? 'border-selected' : ''" (click)="cellClicked($event, item, ref)"
+      class="genshin-item" *ngFor="let item of genshinDishes">
       <div class="genshin-item-image">
         <img [src]="'../../assets/genshin-food-images/' + item.name + '.png'" />
       </div>

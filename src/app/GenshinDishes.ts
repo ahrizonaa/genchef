@@ -1,11 +1,12 @@
 export class GenshinDish {
-  src: string = '';
+  src?: string = '';
   name: string = '';
-  stars: string = '';
-  effect_title: string = '';
-  type: string = '';
-  description: string = '';
-  recipe: Recipe[] = [];
+  stars?: string = '';
+  effect_title?: string | undefined = '';
+  type?: string = '';
+  description?: string = '';
+  recipe?: Recipe[] | undefined = [];
+  selected?: boolean = false;
 }
 
 export class Recipe {
@@ -3228,6 +3229,7 @@ export const GenshinDishes: GenshinDish[] = [
     type: 'Recovery Dishes',
     description:
       'Restores 26~30% of Max HP to the selected character and regenerates 450~790 HP every 5s for 30s.',
+    effect_title: '',
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/b/b1/Item_Taiyaki.png/revision/latest/scale-to-width-down/45?cb=20210901042544',
@@ -3635,6 +3637,7 @@ export const GenshinDishes: GenshinDish[] = [
     effect_title: 'ATK Up',
     type: 'ATK-Boosting Dishes',
     description: "Increases all party members' ATK by 114 for 300s.",
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8c/Item_Zhongyuan_Chop_Suey.png/revision/latest/scale-to-width-down/45?cb=20210416223953',

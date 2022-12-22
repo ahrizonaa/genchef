@@ -24,6 +24,16 @@
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  cursor: pointer;
+  transition: border 0.5s ease-in-out;
+}
+
+.genshin-item:hover {
+  border: 3px solid rgb(255, 234, 0) !important;
+}
+
+.border-selected {
+  border: 3px solid rgb(255, 234, 0) !important;
 }
 
 .genshin-item-image {
@@ -43,5 +53,5 @@
   text-overflow: ellipsis;
   white-space: no-wrap;
   overflow: hidden;
-  font-size: 1.5vw;
+  font-size: 8px;
 }

@@ -1,8 +1,6 @@
 import { GenshinDish, GenshinDishes } from './../GenshinDishes';
 import { Component } from '@angular/core';
 
-import GenshinIngredients from '../GenshinIngredients';
-
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
@@ -21,5 +19,11 @@ export class Tab2Page {
         return each.name.toLowerCase().includes(this.searchQuery.toLowerCase());
       });
     }
+  }
+
+  cellClicked(event: Event, item: GenshinDish, ref: Element) {
+    ref.classList.toggle('border-selected');
+
+    //console.log(event, item, ref);
   }
 }
