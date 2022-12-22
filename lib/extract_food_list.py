@@ -17,6 +17,7 @@ rows = soup.find_all('tr')
 dishes = []
 
 for row in rows:
+    dish = {}
     cells = row.find_all('td')
     img = cells[0].find('img')
     # children = [node for node in row.contents if node != '\n']
@@ -34,6 +35,29 @@ for row in rows:
     if title is not None:
         dish['name'] = re.sub(
             r'\s+', ' ', title.text.replace('\n', '')).strip().replace(r'\\', '').replace('"', '')
+
+    url = 'https://genshin-impact.fandom.com' + title.get('href')
+    print(url)
+    page = requests.get(url).content
+    pagesoup = BeautifulSoup(page, "html.parser")
+    recipe = pagesoup.find('div', {"class": "new_genshin_recipe_body"})
+    if recipe is not None:
+        yieldCard = recipe.find(
+            'div', {'class': 'new_genshin_recipe_body_yield hidden'})
+        if yieldCard is not None:
+            yieldCard.decompose()
+        ingredients = recipe.find_all('div', {"class": "card_with_caption"})
+
+        dish['recipe'] = []
+        for ingredient in ingredients:
+            card_image = ingredient.find('div', {'class': 'card_image'})
+            name = card_image.find("a").get("title")
+
+            card_text = ingredient.find('div', {'class': 'card_text'})
+            quantity = card_text.find('span', {'class': 'card_font'}).text
+
+            dish['recipe'].append(
+                {'ingredient': name.replace('\\', '').replace('"', ''), 'quantity': quantity})
 
     stars = cells[2].find('img')
     if stars is not None:
