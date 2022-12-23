@@ -21,7 +21,7 @@ export class Recipe {
 
 export const GenshinDishes: GenshinDish[] = [
   {
-    src: 'https://static.wikia.nocookie.net/gensin-impact/images/e/e3/Item_%22Pile_%27Em_Up%22.png/revision/latest/scale-to-width-down/45?cb=20210415145821',
+    src: 'https://static.wikia.nocookie.net/gensin-impact/images/e/e3/Item_Pile_Em_Up.png/revision/latest/scale-to-width-down/45?cb=20210415145821',
     name: "Pile 'Em Up",
     recipe: [
       {
@@ -43,7 +43,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'CRIT Rate Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' CRIT Rate by 10~20% for 300s.",
   },
   {
@@ -69,14 +69,14 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Stamina Increase',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description: 'Restores 40~60 Stamina.',
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Activated_Starshroom.png/revision/latest/scale-to-width-down/45?cb=20220827114923',
     name: 'Activated Starshroom',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Restores 800 HP.',
   },
   {
@@ -102,7 +102,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '5 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description:
       "Increases all party members' ATK by 260~372 and CRIT Rate by 8~12% for 300s.",
   },
@@ -125,7 +125,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' ATK by 160~228 for 300s.",
   },
   {
@@ -147,7 +147,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' ATK by 66~95 for 300s.",
   },
   {
@@ -155,7 +155,7 @@ export const GenshinDishes: GenshinDish[] = [
     name: 'Apple Cider',
     stars: '2 Stars',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 26% of Max HP to the selected character and regenerates 570 HP every 5s for 30s.',
   },
@@ -163,7 +163,7 @@ export const GenshinDishes: GenshinDish[] = [
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Item_Apple.png/revision/latest/scale-to-width-down/45?cb=20210113032853',
     name: 'Apple',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Restores 300 HP.',
   },
   {
@@ -189,7 +189,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'CRIT Rate Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' CRIT Rate by 10~20% for 300s.",
   },
   {
@@ -211,7 +211,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 26~30% of Max HP to the selected character. Regenerates 450~790 HP every 5s for 30s.',
   },
@@ -234,7 +234,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Stamina Reduction',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description:
       "Decreases all party members' gliding and sprinting Stamina consumption by 15~25% for 900s.",
   },
@@ -243,7 +243,7 @@ export const GenshinDishes: GenshinDish[] = [
     name: 'Berry & Mint Burst',
     stars: '2 Stars',
     effect_title: 'CRIT Rate Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' CRIT Rate by 16% for 300s.",
   },
   {
@@ -265,7 +265,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 18~22% of Max HP and regenerates 300~470 HP every 5 seconds for 30s.',
   },
@@ -284,7 +284,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 8~10% of Max HP and an additional 800~1,200 HP to the selected character.',
   },
@@ -338,7 +338,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 26~30% of Max HP to the selected character and regenerates 450~790 HP every 5s for 30s.',
   },
@@ -365,7 +365,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '4 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description:
       "Increases all party members' ATK by 224~320 and CRIT Rate by 6~10% for 300s.",
   },
@@ -392,7 +392,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description:
       "Increases all party members' Physical DMG by 20~40% for 300s.",
   },
@@ -446,7 +446,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '4 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description:
       "Increases all party members' DEF by 215~308 and healing effects by 6~10% for 300s.",
   },
@@ -469,7 +469,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description: "Increases all party members' DEF by 165~235 for 300s.",
   },
   {
@@ -495,7 +495,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description: "Increases all party members' DEF by 165~235 for 300s.",
   },
   {
@@ -517,7 +517,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 900~1,500 HP.',
   },
   {
@@ -543,7 +543,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '4 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description:
       "Increases all party members' ATK by 224~320 and CRIT Rate by 6~10% for 300s.",
   },
@@ -562,7 +562,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 8~10% of Max HP and an additional 800~1,200 HP to the selected character.',
   },
@@ -589,7 +589,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '4 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description:
       "Increases all party members' Shield strength by 25~35% and DEF by 165~235 for 300s.",
   },
@@ -616,7 +616,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description:
       "Increases all party members' Physical DMG by 20~40% for 300s.",
   },
@@ -643,7 +643,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'CRIT Rate Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' CRIT Rate by 10~20% for 300s.",
   },
   {
@@ -661,7 +661,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' ATK by 66~95 for 300s.",
   },
   {
@@ -679,7 +679,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 250~550 HP.',
   },
   {
@@ -705,7 +705,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 900~1,500 HP.',
   },
   {
@@ -727,7 +727,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Stamina Reduction',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description:
       "Decreases all party members' sprinting Stamina consumption by 15~25% for 900s.",
   },
@@ -754,7 +754,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 26~30% of Max HP to the selected character and regenerates 450~790 HP every 5s for 30s.',
   },
@@ -777,7 +777,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 18~22% of Max HP to the selected character and regenerates 300~470 HP every 5s for 30s.',
   },
@@ -804,7 +804,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'CRIT Rate Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' CRIT Rate by 10~20% for 300s.",
   },
   {
@@ -826,7 +826,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 20~24% of Max HP and an additional 900~1,500 HP to the selected character.',
   },
@@ -835,7 +835,7 @@ export const GenshinDishes: GenshinDish[] = [
     name: 'Dango Milk',
     stars: '2 Stars',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 26% of Max HP to the selected character and regenerates 570 HP every 5s for 30s.',
   },
@@ -906,7 +906,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' ATK by 160~228 for 300s.",
   },
   {
@@ -924,7 +924,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 8~10% of Max HP and an additional 800~1,200 HP to the selected character.',
   },
@@ -965,7 +965,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 50~150 HP.',
   },
   {
@@ -987,7 +987,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 18~22% of Max HP to the selected character and regenerates 300~470 HP every 5s for 30s.',
   },
@@ -1014,7 +1014,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description: "Increases all party members' DEF by 88~126 for 300s.",
   },
   {
@@ -1040,7 +1040,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Stamina Increase',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description: 'Restores 70~100 Stamina.',
   },
   {
@@ -1084,7 +1084,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 18~22% of Max HP to the selected character and regenerates 300~470 HP every 5s for 30s.',
   },
@@ -1129,7 +1129,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' ATK by 160~228 for 300s.",
   },
   {
@@ -1151,7 +1151,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' ATK by 66~95 for 300s.",
   },
   {
@@ -1217,7 +1217,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description:
       "Increases all party members' Healing Bonus by 15~20% for 300s.",
   },
@@ -1244,7 +1244,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 900~1,500 HP.',
   },
   {
@@ -1270,7 +1270,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 30~34% of Max HP and an additional 600~1,900 HP to the selected character.',
   },
@@ -1297,7 +1297,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '4 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description:
       "Increases all party members' DEF by 215~308 and healing effects by 6~10% for 300s.",
   },
@@ -1324,7 +1324,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '4 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description:
       "Increases all party members' ATK by 224~320 and CRIT Rate by 6~10% for 300s.",
   },
@@ -1347,7 +1347,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 900~1,500 HP.',
   },
   {
@@ -1369,7 +1369,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Sheer Cold Resistance',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description:
       'Slightly decreases~Decreases the rate of Sheer Cold accumulation for all party members for 900s.',
   },
@@ -1388,7 +1388,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 8~10% of Max HP and an additional 800~1,200 HP to the selected character.',
   },
@@ -1407,7 +1407,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 20~24% of Max HP and an additional 900~1,500 HP to the selected character.',
   },
@@ -1459,7 +1459,7 @@ export const GenshinDishes: GenshinDish[] = [
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Item_Holy_Water.png/revision/latest/scale-to-width-down/45?cb=20201126234926',
     name: 'Holy Water',
     stars: '3 Stars',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: '\u00e2\u20ac\u2039',
   },
   {
@@ -1485,7 +1485,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'CRIT Rate Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' CRIT Rate by 10~20% for 300s.",
   },
   {
@@ -1533,7 +1533,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 26~30% of Max HP to the selected character. Regenerates 450~790 HP every 5s for the next 30s.',
   },
@@ -1560,7 +1560,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '4 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description:
       "Increases all party members' ATK by 224~320 and CRIT Rate by 6~10% for 300s.",
   },
@@ -1583,7 +1583,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description: "Increases all party members' DEF by 88~126 for 300s.",
   },
   {
@@ -1605,7 +1605,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'CRIT Rate Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' CRIT Rate by 6~12% for 300s.",
   },
   {
@@ -1631,7 +1631,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description:
       "Increases all party members' Physical DMG by 20~40% for 300s.",
   },
@@ -1654,7 +1654,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' ATK by 66~95 for 300s.",
   },
   {
@@ -1680,7 +1680,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 900~1500 HP.',
   },
   {
@@ -1698,7 +1698,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 8~10% of Max HP and an additional 800~1,200 HP to the selected character.',
   },
@@ -1707,7 +1707,7 @@ export const GenshinDishes: GenshinDish[] = [
     name: 'Lantern Rite Special Come and Get It',
     stars: '3 Stars',
     effect_title: 'CRIT Rate Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' CRIT Rate by 20% for 300s.",
   },
   {
@@ -1715,7 +1715,7 @@ export const GenshinDishes: GenshinDish[] = [
     name: 'Lantern Rite Special Fried Radish Balls',
     stars: '2 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' ATK by 95 for 300s.",
   },
   {
@@ -1723,7 +1723,7 @@ export const GenshinDishes: GenshinDish[] = [
     name: 'Lantern Rite Special Grilled Tiger Fish',
     stars: '1 Star',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 10% of Max HP and an additional 1,200 HP to the selected character.',
   },
@@ -1732,7 +1732,7 @@ export const GenshinDishes: GenshinDish[] = [
     name: 'Lantern Rite Special Jewelry Soup',
     stars: '2 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description: "Increases all party members' DEF by 126 for 300s.",
   },
   {
@@ -1740,7 +1740,7 @@ export const GenshinDishes: GenshinDish[] = [
     name: 'Lantern Rite Special Lotus Seed and Bird Egg Soup',
     stars: '2 Stars',
     effect_title: 'Stamina Reduction',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description:
       "Decreases all party members' sprinting Stamina consumption by 25% for 900s.",
   },
@@ -1749,15 +1749,15 @@ export const GenshinDishes: GenshinDish[] = [
     name: 'Lantern Rite Special Noodles with Mountain Delicacies',
     stars: '2 Stars',
     effect_title: 'Stamina Increase',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description: 'Restores 60 Stamina.',
   },
   {
-    src: 'https://static.wikia.nocookie.net/gensin-impact/images/7/71/Item_Delicious_Triple-Layered_Consomm%C3%A9.png/revision/latest/scale-to-width-down/45?cb=20210415183048',
-    name: 'Lantern Rite Special Triple-Layered Consomm\u00c3\u00a9',
+    src: 'https://static.wikia.nocookie.net/gensin-impact/images/7/71/Item_Delicious_Triple-Layered_Consomm.png/revision/latest/scale-to-width-down/45?cb=20210415183048',
+    name: 'Lantern Rite Special Triple-Layered Consomm',
     stars: '3 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description: "Increases all party members' Shield strength by 30%.",
   },
   {
@@ -1783,7 +1783,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description: "Increases all party members' DEF by 165~235 for 300s.",
   },
   {
@@ -1805,7 +1805,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Stamina Reduction',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description:
       "Decreases all party members' sprinting Stamina consumption by 15~25% for 900s.",
   },
@@ -1847,7 +1847,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 20~24% of Max HP and an additional 900~1,500 HP to the selected character.',
   },
@@ -1919,7 +1919,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 8~10% of Max HP and an additional 800~1,200 HP to the selected character.',
   },
@@ -1938,7 +1938,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' ATK by 66~95 for 300s.",
   },
   {
@@ -1956,7 +1956,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 50~150 HP.',
   },
   {
@@ -1978,7 +1978,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Stamina Reduction',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description:
       "Decreases all party members' gliding and sprinting Stamina consumption by 15~25% for 900s.",
   },
@@ -1997,7 +1997,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 8~10% of Max HP to the selected character and regenerates 210~300 HP every 5s for 30s.',
   },
@@ -2020,7 +2020,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 250~550 HP.',
   },
   {
@@ -2038,7 +2038,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 50~150 HP.',
   },
   {
@@ -2060,7 +2060,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 30~34% of Max HP and an additional 600~1,900 HP to the selected character.',
   },
@@ -2087,7 +2087,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '4 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description:
       "Increases all party members' Shield Strength by 25~35% and DEF by 165~235 for 300s.",
   },
@@ -2106,7 +2106,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 50~150 HP.',
   },
   {
@@ -2132,7 +2132,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description:
       "Increases all party members' Physical DMG by 20~40% for 300s.",
   },
@@ -2155,7 +2155,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description:
       'Increases all party members\u00e2\u20ac\u2122 DEF by 88~126 for 300s. In Co-Op Mode, this effect only applies to your own character(s).',
   },
@@ -2182,7 +2182,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 26~30% of Max HP to the selected character. Regenerates 450~790 HP every 5s for 30s.',
   },
@@ -2205,7 +2205,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Stamina Increase',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description: 'Restores 40~60 Stamina.',
   },
   {
@@ -2231,7 +2231,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 30~34% of Max HP and an additional 600~1,900 HP to the selected character.',
   },
@@ -2254,7 +2254,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Stamina Increase',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description: 'Restores 40~60 Stamina.',
   },
   {
@@ -2280,7 +2280,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Stamina Reduction',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description:
       'Decreases Stamina depleted by climbing and sprinting for all party members by 15~25% for 900s.',
   },
@@ -2307,7 +2307,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Stamina Increase',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description: 'Restores 70~100 Stamina.',
   },
   {
@@ -2329,7 +2329,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 18~22% of Max HP to the selected character and regenerates 300~470 HP every 5s for 30s.',
   },
@@ -2356,7 +2356,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Stamina Reduction',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description:
       "Decreases all party members' climbing and sprinting Stamina consumption by 15~25% for 900s.",
   },
@@ -2379,7 +2379,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 250~550 HP.',
   },
   {
@@ -2405,7 +2405,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 30~34% of Max HP and an additional 600~1,900 HP to the selected character.',
   },
@@ -2414,7 +2414,7 @@ export const GenshinDishes: GenshinDish[] = [
     name: "Pop's Teas",
     stars: '1 Star',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 14% of Max HP to the selected character and regenerates 350 HP every 5s for 30s.',
   },
@@ -2437,7 +2437,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 900~1,500 HP.',
   },
   {
@@ -2463,7 +2463,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' ATK by 160~228 for 300s.",
   },
   {
@@ -2481,7 +2481,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 8~10% of Max HP to the selected character and regenerates 210~300 HP every 5s for 30s.',
   },
@@ -2504,7 +2504,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'CRIT Rate Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' CRIT Rate by 6~12% for 300s.",
   },
   {
@@ -2530,7 +2530,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Stamina Reduction',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description:
       "Decreases all party members' gliding and sprinting Stamina consumption by 15~25% for 900s.",
   },
@@ -2549,7 +2549,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 8~10% of Max HP and an additional 800~1,200 HP to the selected character.',
   },
@@ -2576,7 +2576,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description: "Increases all party members' DEF by 165~235 for 300s.",
   },
   {
@@ -2602,7 +2602,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Stamina Increase',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description: 'Restores 70~100 Stamina.',
   },
   {
@@ -2624,7 +2624,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 18~22% of Max HP and regenerates 300~470 HP every 5s for 30s.',
   },
@@ -2647,7 +2647,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 900~1,500 HP.',
   },
   {
@@ -2669,7 +2669,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description: "Increases all party members' HP by 20%~25% for 300s.",
   },
   {
@@ -2695,7 +2695,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description:
       "Increases all party members' Shield strength by 20~30% for 300s.",
   },
@@ -2718,7 +2718,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 20~24% of Max HP to the selected character and an additional 900~1,500 HP.',
   },
@@ -2741,7 +2741,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Stamina Reduction',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description:
       "Decreases all party members' sprinting Stamina consumption by 15~25% for 900s.",
   },
@@ -2768,7 +2768,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '4 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description:
       "Increases all party members' ATK by 224~320 and CRIT Rate by 6~10% for 300s.",
   },
@@ -2795,7 +2795,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'CRIT Rate Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' CRIT rate by 6~12% for 300s.",
   },
   {
@@ -2821,14 +2821,14 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' ATK by 160~228 for 300s.",
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8b/Item_Scorched_Starshroom.png/revision/latest/scale-to-width-down/45?cb=20220827114922',
     name: 'Scorched Starshroom',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Restores 1 HP.',
   },
   {
@@ -2850,7 +2850,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Stamina Reduction',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description:
       "Decreases all party members' sprinting Stamina consumption by 15~25% for 900s.",
   },
@@ -2914,7 +2914,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 8~10% of Max HP to the selected character and regenerates 210~300 HP every 5s for 30s.',
   },
@@ -2923,7 +2923,7 @@ export const GenshinDishes: GenshinDish[] = [
     name: 'Sparkling Berry Juice',
     stars: '2 Stars',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Revives a character and restores 15% of Max HP, then restores an additional 550 HP.',
   },
@@ -2932,7 +2932,7 @@ export const GenshinDishes: GenshinDish[] = [
     name: 'Special Mushroom Pizza',
     stars: '3 Stars',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 28% of Max HP to the selected character. Regenerates 620 HP every 5s for 30s.',
   },
@@ -2959,7 +2959,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 30~34% of Max HP and an additional 600~1,900 HP to the selected character.',
   },
@@ -2967,7 +2967,7 @@ export const GenshinDishes: GenshinDish[] = [
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Item_Starshroom.png/revision/latest/scale-to-width-down/45?cb=20220330031844',
     name: 'Starshroom',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Restores 300 HP.',
   },
   {
@@ -2981,7 +2981,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 50~150 HP.',
   },
   {
@@ -3003,7 +3003,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Stamina Reduction',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description:
       "Decreases all party member's climbing and sprinting Stamina consumption by 15~25% for 900s.",
   },
@@ -3022,7 +3022,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 50~150 HP.',
   },
   {
@@ -3044,7 +3044,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 18~22% of Max HP and regenerates 300~470 HP every 5 seconds for 30s.',
   },
@@ -3067,7 +3067,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description:
       "Increases all party members' Shield strength by 20~30% for 300s.",
   },
@@ -3090,7 +3090,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'CRIT Rate Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' CRIT Rate by 6~12% for 300s.",
   },
   {
@@ -3142,7 +3142,7 @@ export const GenshinDishes: GenshinDish[] = [
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Item_Sunsettia.png/revision/latest/scale-to-width-down/45?cb=20210109214706',
     name: 'Sunsettia',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Restores 300 HP.',
   },
   {
@@ -3168,7 +3168,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description:
       "Increases all party members' Shield strength by 20~30% for 300s.",
   },
@@ -3187,7 +3187,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 20~24% of Max HP and an additional 900~1,500 HP to the selected character.',
   },
@@ -3206,7 +3206,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 50~150 HP.',
   },
   {
@@ -3231,7 +3231,7 @@ export const GenshinDishes: GenshinDish[] = [
       },
     ],
     stars: '3 Stars',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 26~30% of Max HP to the selected character and regenerates 450~790 HP every 5s for 30s.',
     effect_title: '',
@@ -3259,7 +3259,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Regeneration',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 26~30% of Max HP to the selected character. Regenerates 450~790 HP every 5s for the next 30s.',
   },
@@ -3286,7 +3286,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '4 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description:
       "Increases all party members' ATK by 224~320 and CRIT Rate by 6~10% for 300s.",
   },
@@ -3309,7 +3309,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 250~550 HP.',
   },
   {
@@ -3323,7 +3323,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '1 Star',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 50~150 HP.',
   },
   {
@@ -3349,7 +3349,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '4 Stars',
     effect_title: 'CRIT Rate Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description:
       "Increases all party members' Physical DMG by 25~45% and CRIT Rate by 6~10% for 300s.",
   },
@@ -3376,7 +3376,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 30~34% of Max HP and an additional 600~1,900 HP to the selected character.',
   },
@@ -3403,7 +3403,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' ATK by 160~228 for 300s.",
   },
   {
@@ -3429,13 +3429,13 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 30~34% of Max HP and an additional 600~1,900 HP to the selected character.',
   },
   {
-    src: 'https://static.wikia.nocookie.net/gensin-impact/images/b/be/Item_Triple-Layered_Consomm%C3%A9.png/revision/latest/scale-to-width-down/45?cb=20210415145658',
-    name: 'Triple-Layered Consomm\u00c3\u00a9',
+    src: 'https://static.wikia.nocookie.net/gensin-impact/images/b/be/Item_Triple-Layered_Consomm.png/revision/latest/scale-to-width-down/45?cb=20210415145658',
+    name: 'Triple-Layered Consomm',
     recipe: [
       {
         ingredient: 'Ham',
@@ -3456,7 +3456,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description:
       "Increases all party members' Shield strength by 20~30% for 300s.",
   },
@@ -3475,7 +3475,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 20~24% of Max HP and an additional 900~1,500 HP to the selected character.',
   },
@@ -3498,7 +3498,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 250~550 HP.',
   },
   {
@@ -3524,7 +3524,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description:
       "Increases all party members' Healing Bonus by 15%~20% for 300s.",
   },
@@ -3551,7 +3551,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Healing',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description:
       'Restores 30~34% of Max HP and an additional 600~1,900 HP to the selected character.',
   },
@@ -3592,7 +3592,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'Revive',
-    type: 'Recovery Dishes',
+    type: 'Recovery Dish',
     description: 'Revives a character and restores 250~550 HP',
   },
   {
@@ -3610,7 +3610,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '2 Stars',
     effect_title: 'DEF Up',
-    type: 'DEF-Boosting Dishes',
+    type: 'DEF-Boosting Dish',
     description: "Increases all party members' DEF by 88~126 for 300s.",
   },
   {
@@ -3640,7 +3640,7 @@ export const GenshinDishes: GenshinDish[] = [
     name: 'Wolfhook Juice',
     stars: '2 Stars',
     effect_title: 'ATK Up',
-    type: 'ATK-Boosting Dishes',
+    type: 'ATK-Boosting Dish',
     description: "Increases all party members' ATK by 114 for 300s.",
     recipe: [],
   },
@@ -3667,7 +3667,7 @@ export const GenshinDishes: GenshinDish[] = [
     ],
     stars: '3 Stars',
     effect_title: 'Stamina Reduction',
-    type: "Adventurer's Dishes",
+    type: "Adventurer's Dish",
     description:
       "Decreases all party members' climbing and sprinting Stamina consumption by 15~25% for 900s.",
   },

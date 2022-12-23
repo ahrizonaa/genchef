@@ -1,12 +1,39 @@
 .item-list-container {
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
+  /* width: 100%; */
+  /* height: 100%; */
+  /* overflow-y: auto; */
   padding: 5px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  // align-items: center;
+  flex-direction: column;
+}
+
+.dish-type-container {
+  // border: 1px solid #607d8b;
+  // border-radius: 2px;
+  box-sizing: border-box;
+  margin: 10px 0 10px 0;
+}
+
+.dish-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  max-height: 40vh;
+  height: fit-content;
+  justify-content: center;
+  // border: 1px solid #607d8b;
+
+  padding: 0 10px 0 10px;
+}
+
+.dish-list-inner-container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  max-height: 40vh;
+  height: fit-content;
+  width: 100%;
 }
 
 .genshin-item {
@@ -25,7 +52,7 @@
   flex-direction: column;
   overflow: hidden;
   cursor: pointer;
-  transition: border 0.5s ease-in-out;
+  transition: border 0.2s ease;
   position: relative;
 }
 
@@ -55,12 +82,14 @@
   white-space: no-wrap;
   overflow: hidden;
   font-size: 8px;
+  position: absolute;
+  bottom: 5px;
 }
 
 .ingredient_qty_tr {
   position: absolute !important;
-  right: 0px;
-  top: 0px;
+  right: -1px;
+  top: -1px;
   font-size: 10px !important;
   padding-right: 6px;
   padding-left: 6px;
@@ -68,8 +97,8 @@
 
 .ingredient_qty_tl {
   position: absolute !important;
-  left: 0px;
-  top: 0px;
+  left: -1px;
+  top: -1px;
   font-size: 10px !important;
   // padding-right: 3px;
   // padding-left: 3px;
@@ -78,9 +107,19 @@
 }
 
 ion-badge.ingredient_qty_tr {
-  --background: #65adff;
+  --background: #7c65ff;
 }
 
 ion-badge.ingredient_qty_tl {
   --background: #c2c2c2;
+  color: black !important;
+}
+
+.clear-btn {
+  font-size: 8px;
+  float: right;
+  padding-right: 10px;
+  opacity: 0;
+
+  transition: opacity 0.2s ease;
 }
