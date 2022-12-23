@@ -1,4 +1,8 @@
 export class GenshinDish {
+  constructor() {
+    this.quantity = 0;
+    this.selected = false;
+  }
   src?: string = '';
   name: string = '';
   stars?: string = '';
@@ -7,6 +11,7 @@ export class GenshinDish {
   description?: string = '';
   recipe?: Recipe[] | undefined = [];
   selected?: boolean = false;
+  quantity?: number = 0;
 }
 
 export class Recipe {

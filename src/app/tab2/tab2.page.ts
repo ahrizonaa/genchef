@@ -21,9 +21,20 @@ export class Tab2Page {
     }
   }
 
-  cellClicked(event: Event, item: GenshinDish, ref: Element) {
+  cellClicked(event: Event, item: GenshinDish, ref: HTMLElement) {
     ref.classList.toggle('border-selected');
 
-    //console.log(event, item, ref);
+    item.quantity = !item.quantity ? 1 : item.quantity + 1;
+
+    console.log(event, item, ref);
+  }
+
+  removeIngredient($event: Event, item: GenshinDish, ref: HTMLElement) {
+    $event.stopPropagation();
+    if (!item.quantity) return;
+
+    item.quantity -= 1;
+
+    console.log(event, item, ref);
   }
 }

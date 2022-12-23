@@ -26,14 +26,15 @@
   overflow: hidden;
   cursor: pointer;
   transition: border 0.5s ease-in-out;
+  position: relative;
 }
 
 .genshin-item:hover {
-  border: 3px solid rgb(255, 234, 0) !important;
+  border: 3px solid rgb(219, 236, 234) !important;
 }
 
 .border-selected {
-  border: 3px solid rgb(255, 234, 0) !important;
+  border: 3px solid rgb(219, 236, 234) !important;
 }
 
 .genshin-item-image {
@@ -54,4 +55,32 @@
   white-space: no-wrap;
   overflow: hidden;
   font-size: 8px;
+}
+
+.ingredient_qty_tr {
+  position: absolute !important;
+  right: 0px;
+  top: 0px;
+  font-size: 10px !important;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+.ingredient_qty_tl {
+  position: absolute !important;
+  left: 0px;
+  top: 0px;
+  font-size: 10px !important;
+  // padding-right: 3px;
+  // padding-left: 3px;
+  padding: 2px 3px 2px 3px;
+  color: black;
+}
+
+ion-badge.ingredient_qty_tr {
+  --background: #65adff;
+}
+
+ion-badge.ingredient_qty_tl {
+  --background: #c2c2c2;
 }

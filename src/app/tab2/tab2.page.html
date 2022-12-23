@@ -17,12 +17,19 @@
   </ion-item>
 
   <div class="item-list-container">
-    <div #ref ngClass="item.selected ? 'border-selected' : ''" (tap)="cellClicked($event, item, ref)"
-      class="genshin-item" *ngFor="let item of genshinDishes">
+    <div button #ref (click)="cellClicked($event, item, ref)" class="genshin-item" *ngFor="let item of genshinDishes">
       <div class="genshin-item-image">
         <img [src]="'../../assets/genshin-food-images/' + item.name + '.png'" />
       </div>
-      <div class="genshin-item-text">{{ item.name.split('_').join(' ') }}</div>
+      <div class="genshin-item-text">{{ item.name.split('_').join(' ') }} {{ !item.quantity ? '' : item.quantity }}
+      </div>
+
+      <ion-badge *ngIf="!!item.quantity" class="ingredient_qty ingredient_qty_tr">{{ item.quantity }}
+      </ion-badge>
+      <ion-badge (click)="removeIngredient($event, item, ref)" *ngIf="!!item.quantity"
+        class="ingredient_qty ingredient_qty_tl">
+        <ion-icon name="remove-outline"></ion-icon>
+      </ion-badge>
     </div>
   </div>
 </ion-content>
