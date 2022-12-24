@@ -9,14 +9,14 @@ export class GenshinDish {
   effect_title?: string | undefined = '';
   type?: string = '';
   description?: string = '';
-  recipe?: Recipe[] | undefined = [];
+  recipe: Recipe[] = [];
   selected?: boolean = false;
   quantity?: number = 0;
 }
 
 export class Recipe {
   ingredient: string = '';
-  quantity: string = '';
+  quantity: number = 0;
 }
 
 export const GenshinDishes: GenshinDish[] = [
@@ -26,19 +26,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Potato',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Small Lamp Grass',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Cheese',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -52,19 +52,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Rice',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Flour',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Glabrous Beans',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Tomato',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '2 Stars',
@@ -78,6 +78,7 @@ export const GenshinDishes: GenshinDish[] = [
     effect_title: 'Healing',
     type: 'Recovery Dish',
     description: 'Restores 800 HP.',
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/5/5e/Item_Adeptus%27_Temptation.png/revision/latest/scale-to-width-down/45?cb=20210415133724',
@@ -85,19 +86,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Ham',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Crab',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Shrimp Meat',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Matsutake',
-        quantity: '3',
+        quantity: 3,
       },
     ],
     stars: '5 Stars',
@@ -112,15 +113,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Bird Egg',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Flour',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Ham',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -134,15 +135,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Milk',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Sugar',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Almond',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -158,6 +159,7 @@ export const GenshinDishes: GenshinDish[] = [
     type: 'Recovery Dish',
     description:
       'Restores 26% of Max HP to the selected character and regenerates 570 HP every 5s for 30s.',
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Item_Apple.png/revision/latest/scale-to-width-down/45?cb=20210113032853',
@@ -165,6 +167,7 @@ export const GenshinDishes: GenshinDish[] = [
     effect_title: 'Healing',
     type: 'Recovery Dish',
     description: 'Restores 300 HP.',
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/f/fd/Item_Baklava.png/revision/latest/scale-to-width-down/45?cb=20220929125056',
@@ -172,19 +175,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Flour',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Ajilenakh Nut',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Butter',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sugar',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -198,15 +201,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Ham',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Bamboo Shoot',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -221,15 +224,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Carrot',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Potato',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Onion',
-        quantity: '4',
+        quantity: 4,
       },
     ],
     stars: '3 Stars',
@@ -245,6 +248,7 @@ export const GenshinDishes: GenshinDish[] = [
     effect_title: 'CRIT Rate Up',
     type: 'ATK-Boosting Dish',
     description: "Increases all party members' CRIT Rate by 16% for 300s.",
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/9/90/Item_Berry_Mizu_Manjuu.png/revision/latest/scale-to-width-down/45?cb=20211014000649',
@@ -252,15 +256,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Rice',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Berry',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sugar',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -275,11 +279,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Bird Egg',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Rice',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '1 Star',
@@ -294,19 +298,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Rice',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Raw Meat',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Spice',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Padisarah',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '4 Stars',
@@ -321,19 +325,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fish',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Jueyun Chili',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Salt',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Violetgrass',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -348,19 +352,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fish',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Carrot',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Onion',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Violetgrass',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '4 Stars',
@@ -375,19 +379,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Carrot',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Potato',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Onion',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -402,19 +406,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fowl',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Tomato',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Butter',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Spice',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -429,19 +433,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Butter',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Crab',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Seagrass',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Matsutake',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '4 Stars',
@@ -456,15 +460,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Crab',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Calla Lily',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mint',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '3 Stars',
@@ -478,19 +482,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Ajilenakh Nut',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Almond',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Butter',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sumeru Rose',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -504,15 +508,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Ajilenakh Nut',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Flour',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Jam',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -526,19 +530,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fowl',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Ham',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Bird Egg',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Snapdragon',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '4 Stars',
@@ -553,11 +557,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Mushroom',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Fowl',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '1 Star',
@@ -572,19 +576,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Flour',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Cabbage',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Jueyun Chili',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '4 Stars',
@@ -599,19 +603,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Ham',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Bacon',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Sausage',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mint',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -626,19 +630,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Fish',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Rice',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Tofu',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -652,11 +656,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Crab',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Crab Roe',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -670,11 +674,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Crab Roe',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Tofu',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -688,19 +692,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Crab Roe',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Ham',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Cream',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Cabbage',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -714,15 +718,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Cream',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Snapdragon',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -737,19 +741,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Mint',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Shrimp Meat',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Potato',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Berry',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '3 Stars',
@@ -764,15 +768,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Rice',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Shrimp Meat',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Carrot',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '2 Stars',
@@ -787,19 +791,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Ham',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Matsutake',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Snapdragon',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Pepper',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -813,15 +817,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Shrimp Meat',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Onion',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Spice',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -838,6 +842,7 @@ export const GenshinDishes: GenshinDish[] = [
     type: 'Recovery Dish',
     description:
       'Restores 26% of Max HP to the selected character and regenerates 570 HP every 5s for 30s.',
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/0/06/Item_Dendrocide_Potion.png/revision/latest/scale-to-width-down/45?cb=20220825142035',
@@ -845,15 +850,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Crystal Core',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Sumeru Rose',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mora',
-        quantity: '100',
+        quantity: 100,
       },
     ],
     stars: '3 Stars',
@@ -867,15 +872,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Butterfly Wings',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Lotus Head',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mora',
-        quantity: '100',
+        quantity: 100,
       },
     ],
     stars: '3 Stars',
@@ -889,19 +894,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Flour',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Fowl',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Mushroom',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Ham',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -915,11 +920,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fish',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Salt',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '1 Star',
@@ -934,15 +939,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Butterfly Wings',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Cor Lapis',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mora',
-        quantity: '100',
+        quantity: 100,
       },
     ],
     stars: '3 Stars',
@@ -956,11 +961,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Bird Egg',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Sugar',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '1 Star',
@@ -974,15 +979,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fish',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Milk',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Mint',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -997,19 +1002,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Flour',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Tomato',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Onion',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Milk',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -1023,19 +1028,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Radish',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Carrot',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Lavender Melon',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Seagrass',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '3 Stars',
@@ -1049,15 +1054,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Frog (Material)',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Flaming Flower Stamen',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mora',
-        quantity: '100',
+        quantity: 100,
       },
     ],
     stars: '3 Stars',
@@ -1071,15 +1076,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Flour',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Raw Meat',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Tomato',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -1094,15 +1099,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Lizard Tail',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Sumeru Rose',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mora',
-        quantity: '100',
+        quantity: 100,
       },
     ],
     stars: '3 Stars',
@@ -1116,15 +1121,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Potato',
-        quantity: '6',
+        quantity: 6,
       },
       {
         ingredient: 'Cream',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Pepper',
-        quantity: '3',
+        quantity: 3,
       },
     ],
     stars: '3 Stars',
@@ -1138,15 +1143,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Flour',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Radish',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Pepper',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -1160,15 +1165,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Lizard Tail',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mist Flower Corolla',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mora',
-        quantity: '100',
+        quantity: 100,
       },
     ],
     stars: '3 Stars',
@@ -1182,15 +1187,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Crystal Core',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mist Flower Corolla',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mora',
-        quantity: '100',
+        quantity: 100,
       },
     ],
     stars: '3 Stars',
@@ -1204,15 +1209,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Wolfhook',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sunsettia',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sugar',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -1227,19 +1232,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fish',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Shrimp Meat',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Bird Egg',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Flour',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -1253,19 +1258,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fowl',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Flour',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Cabbage',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Butter',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '3 Stars',
@@ -1280,19 +1285,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Bird Egg',
-        quantity: '5',
+        quantity: 5,
       },
       {
         ingredient: 'Flour',
-        quantity: '5',
+        quantity: 5,
       },
       {
         ingredient: 'Crab',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Salt',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '4 Stars',
@@ -1307,19 +1312,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fowl',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Butter',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Pepper',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Flour',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '4 Stars',
@@ -1334,15 +1339,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Shrimp Meat',
-        quantity: '5',
+        quantity: 5,
       },
       {
         ingredient: 'Potato',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Flour',
-        quantity: '3',
+        quantity: 3,
       },
     ],
     stars: '3 Stars',
@@ -1356,15 +1361,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Chilled Meat',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Carrot',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Tomato',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -1379,11 +1384,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fish',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Pepper',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '1 Star',
@@ -1398,11 +1403,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Eel Meat',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Sugar',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -1417,15 +1422,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Lizard Tail',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Dandelion Seed',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mora',
-        quantity: '100',
+        quantity: 100,
       },
     ],
     stars: '3 Stars',
@@ -1439,15 +1444,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Butterfly Wings',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Flaming Flower Stamen',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mora',
-        quantity: '100',
+        quantity: 100,
       },
     ],
     stars: '3 Stars',
@@ -1460,7 +1465,8 @@ export const GenshinDishes: GenshinDish[] = [
     name: 'Holy Water',
     stars: '3 Stars',
     type: 'Recovery Dish',
-    description: '\u00e2\u20ac\u2039',
+    description: '',
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/f/f0/Item_Imported_Poultry.png/revision/latest/scale-to-width-down/45?cb=20210723065349',
@@ -1468,19 +1474,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fowl',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Lavender Melon',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Flour',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Bird Egg',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '3 Stars',
@@ -1494,15 +1500,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Butterfly Wings',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Electro Crystal',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mora',
-        quantity: '100',
+        quantity: 100,
       },
     ],
     stars: '3 Stars',
@@ -1516,19 +1522,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fish',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Raw Meat',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Seagrass',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Rice',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -1543,19 +1549,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Lotus Head',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Jueyun Chili',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Cabbage',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Ham',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '4 Stars',
@@ -1570,15 +1576,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Snapdragon',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Tofu',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Lotus Head',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -1592,15 +1598,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fowl',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Jueyun Chili',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Pepper',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -1614,19 +1620,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Horsetail',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Rice',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Ham',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Jueyun Chili',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -1641,15 +1647,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Flour',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Raw Meat',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Cabbage',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -1663,19 +1669,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fowl',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Snapdragon',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Lavender Melon',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Mushroom',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -1689,11 +1695,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fish',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Sumeru Rose',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '1 Star',
@@ -1709,6 +1715,7 @@ export const GenshinDishes: GenshinDish[] = [
     effect_title: 'CRIT Rate Up',
     type: 'ATK-Boosting Dish',
     description: "Increases all party members' CRIT Rate by 20% for 300s.",
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/7/77/Item_Delicious_Fried_Radish_Balls.png/revision/latest/scale-to-width-down/45?cb=20210417154310',
@@ -1717,6 +1724,7 @@ export const GenshinDishes: GenshinDish[] = [
     effect_title: 'ATK Up',
     type: 'ATK-Boosting Dish',
     description: "Increases all party members' ATK by 95 for 300s.",
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/3/3b/Item_Delicious_Grilled_Tiger_Fish.png/revision/latest/scale-to-width-down/45?cb=20210415132140',
@@ -1726,6 +1734,7 @@ export const GenshinDishes: GenshinDish[] = [
     type: 'Recovery Dish',
     description:
       'Restores 10% of Max HP and an additional 1,200 HP to the selected character.',
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/b/be/Item_Delicious_Jewelry_Soup.png/revision/latest/scale-to-width-down/45?cb=20210415141521',
@@ -1734,6 +1743,7 @@ export const GenshinDishes: GenshinDish[] = [
     effect_title: 'DEF Up',
     type: 'DEF-Boosting Dish',
     description: "Increases all party members' DEF by 126 for 300s.",
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/e/e0/Item_Delicious_Lotus_Seed_and_Bird_Egg_Soup.png/revision/latest/scale-to-width-down/45?cb=20210417155207',
@@ -1743,6 +1753,7 @@ export const GenshinDishes: GenshinDish[] = [
     type: "Adventurer's Dish",
     description:
       "Decreases all party members' sprinting Stamina consumption by 25% for 900s.",
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/2/20/Item_Delicious_Noodles_with_Mountain_Delicacies.png/revision/latest/scale-to-width-down/45?cb=20210415132153',
@@ -1751,6 +1762,7 @@ export const GenshinDishes: GenshinDish[] = [
     effect_title: 'Stamina Increase',
     type: "Adventurer's Dish",
     description: 'Restores 60 Stamina.',
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/7/71/Item_Delicious_Triple-Layered_Consomm.png/revision/latest/scale-to-width-down/45?cb=20210415183048',
@@ -1759,6 +1771,7 @@ export const GenshinDishes: GenshinDish[] = [
     effect_title: 'DEF Up',
     type: 'DEF-Boosting Dish',
     description: "Increases all party members' Shield strength by 30%.",
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/b/b7/Item_Lotus_Flower_Crisp.png/revision/latest/scale-to-width-down/45?cb=20210416223628',
@@ -1766,19 +1779,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Almond',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Flour',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Butter',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sugar',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -1792,15 +1805,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Lotus Head',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Bird Egg',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Sugar',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -1815,15 +1828,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Potato',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Cheese',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Spice',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -1838,11 +1851,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Matsutake',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Raw Meat',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '2 Stars',
@@ -1857,19 +1870,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Flour',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Mushroom',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Cheese',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '4 Stars',
@@ -1884,19 +1897,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Flour',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Mushroom',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Cheese',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Cream',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -1910,11 +1923,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Mint',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Sugar',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '1 Star',
@@ -1929,11 +1942,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Mint',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Jueyun Chili',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -1947,11 +1960,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Glabrous Beans',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Mint',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '1 Star',
@@ -1965,15 +1978,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Mint',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Raw Meat',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Jueyun Chili',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -1988,11 +2001,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Tofu',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Seagrass',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '1 Star',
@@ -2007,15 +2020,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Flour',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Cabbage',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Raw Meat',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -2029,11 +2042,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fish',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Pepper',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '1 Star',
@@ -2047,15 +2060,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Pinecone',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Potato',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Jam',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -2070,19 +2083,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Bird Egg',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Butter',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Flour',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '4 Stars',
@@ -2097,11 +2110,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Flour',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '1 Star',
@@ -2115,19 +2128,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fish',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Bacon',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Lavender Melon',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Flour',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -2142,15 +2155,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Rukkhashava Mushrooms',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mushroom',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Starshroom',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -2165,19 +2178,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Mushroom',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Flour',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Cabbage',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Cheese',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -2192,15 +2205,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Mushroom',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Raw Meat',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Flour',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '2 Stars',
@@ -2214,19 +2227,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Apple',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Butter',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Pepper',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -2241,15 +2254,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Smoked Fowl',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Onion',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Cabbage',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -2263,19 +2276,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Bird Egg',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Rice',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Tomato',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sugar',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -2290,19 +2303,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Tofu',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Bamboo Shoot',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Ham',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Fowl',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -2316,15 +2329,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fish',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Rice',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Seagrass',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '2 Stars',
@@ -2339,19 +2352,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Padisarah',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sumeru Rose',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Milk',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Sugar',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -2366,15 +2379,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Potato',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Glabrous Beans',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Spice',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -2388,19 +2401,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Flour',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Tomato',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Milk',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '3 Stars',
@@ -2417,6 +2430,7 @@ export const GenshinDishes: GenshinDish[] = [
     type: 'Recovery Dish',
     description:
       'Restores 14% of Max HP to the selected character and regenerates 350 HP every 5s for 30s.',
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/0/02/Item_Potato_Boat.png/revision/latest/scale-to-width-down/45?cb=20220826001510',
@@ -2424,15 +2438,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Potato',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Rukkhashava Mushrooms',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Cheese',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -2446,19 +2460,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Mushroom',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Lotus Head',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Jueyun Chili',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Cabbage',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -2472,11 +2486,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Radish',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mint',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '1 Star',
@@ -2491,15 +2505,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fish',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Radish',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Salt',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -2513,19 +2527,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Milk',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Lavender Melon',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Calla Lily',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Mint',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -2540,11 +2554,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Rice',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Horsetail',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '1 Star',
@@ -2559,19 +2573,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Sausage',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Tofu',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Fish',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Lavender Melon',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -2585,19 +2599,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Bird Egg',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Rice',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Milk',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sugar',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '3 Stars',
@@ -2611,15 +2625,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Milk',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sumeru Rose',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sugar',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -2634,15 +2648,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Rice',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Sugar',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sakura Bloom',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -2656,15 +2670,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Shrimp Meat',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Potato',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Sakura Bloom',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '3 Stars',
@@ -2678,19 +2692,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Shrimp Meat',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Lavender Melon',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sakura Bloom',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Flour',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -2705,15 +2719,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Flour',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Spice',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -2728,15 +2742,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fish',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Snapdragon',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Salt',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -2751,19 +2765,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fish',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Shrimp Meat',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Crab',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Radish',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '4 Stars',
@@ -2778,19 +2792,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Cabbage',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Apple',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Bird Egg',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Potato',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -2804,19 +2818,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Matsutake',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Flour',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Pinecone',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Butter',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '3 Stars',
@@ -2830,6 +2844,7 @@ export const GenshinDishes: GenshinDish[] = [
     effect_title: 'Healing',
     type: 'Recovery Dish',
     description: 'Restores 1 HP.',
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/7/75/Item_Selva_Salad.png/revision/latest/scale-to-width-down/45?cb=20220825090918',
@@ -2837,15 +2852,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Zaytun Peach',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Mint',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sumeru Rose',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '2 Stars',
@@ -2860,15 +2875,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Flour',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Spice',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -2883,15 +2898,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Frog (Material)',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Electro Crystal',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mora',
-        quantity: '100',
+        quantity: 100,
       },
     ],
     stars: '3 Stars',
@@ -2905,11 +2920,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Flour',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Seagrass',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '1 Star',
@@ -2926,6 +2941,7 @@ export const GenshinDishes: GenshinDish[] = [
     type: 'Recovery Dish',
     description:
       'Revives a character and restores 15% of Max HP, then restores an additional 550 HP.',
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/e/e4/Item_Special_Mushroom_Pizza.png/revision/latest/scale-to-width-down/45?cb=20210918205436',
@@ -2935,6 +2951,7 @@ export const GenshinDishes: GenshinDish[] = [
     type: 'Recovery Dish',
     description:
       'Restores 28% of Max HP to the selected character. Regenerates 620 HP every 5s for 30s.',
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/c/ce/Item_Squirrel_Fish.png/revision/latest/scale-to-width-down/45?cb=20210416224105',
@@ -2942,19 +2959,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fish',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Tomato',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Flour',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sugar',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -2969,6 +2986,7 @@ export const GenshinDishes: GenshinDish[] = [
     effect_title: 'Healing',
     type: 'Recovery Dish',
     description: 'Restores 300 HP.',
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Item_Steak.png/revision/latest/scale-to-width-down/45?cb=20210416223306',
@@ -2976,7 +2994,7 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '1 Star',
@@ -2990,15 +3008,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Carrot',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sugar',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '3 Stars',
@@ -3013,11 +3031,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Jueyun Chili',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '1 Star',
@@ -3031,15 +3049,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fish',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Rice',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Snapdragon',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '2 Stars',
@@ -3054,15 +3072,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Shrimp Meat',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Flour',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Snapdragon',
-        quantity: '3',
+        quantity: 3,
       },
     ],
     stars: '3 Stars',
@@ -3077,15 +3095,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Potato',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Violetgrass',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Matsutake',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -3099,15 +3117,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Frog (Material)',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Lotus Head',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mora',
-        quantity: '100',
+        quantity: 100,
       },
     ],
     stars: '3 Stars',
@@ -3121,15 +3139,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Sunsettia',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Berry',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Sugar',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '3 Stars',
@@ -3144,6 +3162,7 @@ export const GenshinDishes: GenshinDish[] = [
     effect_title: 'Healing',
     type: 'Recovery Dish',
     description: 'Restores 300 HP.',
+    recipe: [],
   },
   {
     src: 'https://static.wikia.nocookie.net/gensin-impact/images/5/5a/Item_Sunshine_Sprat.png/revision/latest/scale-to-width-down/45?cb=20210417152138',
@@ -3151,19 +3170,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Butter',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Fish',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Salt',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Small Lamp Grass',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -3178,11 +3197,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fowl',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sweet Flower',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '2 Stars',
@@ -3197,11 +3216,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Shrimp Meat',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Rice',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '1 Star',
@@ -3215,19 +3234,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Rice',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Fowl',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Fish',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Padisarah',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -3242,19 +3261,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Sunsettia',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Milk',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Flour',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sugar',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '3 Stars',
@@ -3269,19 +3288,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fowl',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Rukkhashava Mushrooms',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Padisarah',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Spice',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '4 Stars',
@@ -3296,15 +3315,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Berry',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Flour',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Bird Egg',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -3318,7 +3337,7 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Bird Egg',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '1 Star',
@@ -3332,19 +3351,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Sugar',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Qingxin',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Matsutake',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '4 Stars',
@@ -3359,19 +3378,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Flour',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Bamboo Shoot',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Bird Egg',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -3386,19 +3405,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Bird Egg',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Flour',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Snapdragon',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -3412,19 +3431,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Milk',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Snapdragon',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Sakura Bloom',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Rice',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -3439,19 +3458,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Ham',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Fowl',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Bamboo Shoot',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mushroom',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -3466,11 +3485,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Fish',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Rice',
-        quantity: '3',
+        quantity: 3,
       },
     ],
     stars: '2 Stars',
@@ -3485,15 +3504,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Flour',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Seagrass',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Fish',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '2 Stars',
@@ -3507,19 +3526,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Eel Meat',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Rice',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Seagrass',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Salt',
-        quantity: '1',
+        quantity: 1,
       },
     ],
     stars: '3 Stars',
@@ -3534,19 +3553,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Rice',
-        quantity: '4',
+        quantity: 4,
       },
       {
         ingredient: 'Lotus Head',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Carrot',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Berry',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '3 Stars',
@@ -3561,15 +3580,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Frog (Material)',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Cor Lapis',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mora',
-        quantity: '100',
+        quantity: 100,
       },
     ],
     stars: '3 Stars',
@@ -3583,11 +3602,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Matsutake',
-        quantity: '2',
+        quantity: 2,
       },
       {
         ingredient: 'Snapdragon',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '2 Stars',
@@ -3601,11 +3620,11 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Bamboo Shoot',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Seagrass',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '2 Stars',
@@ -3619,15 +3638,15 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Crystal Core',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Dandelion Seed',
-        quantity: '1',
+        quantity: 1,
       },
       {
         ingredient: 'Mora',
-        quantity: '100',
+        quantity: 100,
       },
     ],
     stars: '3 Stars',
@@ -3650,19 +3669,19 @@ export const GenshinDishes: GenshinDish[] = [
     recipe: [
       {
         ingredient: 'Raw Meat',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Fish',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Flour',
-        quantity: '3',
+        quantity: 3,
       },
       {
         ingredient: 'Salt',
-        quantity: '2',
+        quantity: 2,
       },
     ],
     stars: '3 Stars',

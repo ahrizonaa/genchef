@@ -123,3 +123,32 @@ ion-badge.ingredient_qty_tl {
 
   transition: opacity 0.2s ease;
 }
+.modal-recipe-p {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  padding: 3px 0 3px 0;
+  flex-wrap: wrap;
+}
+.modal-dish-qty-badge {
+  font-size: 10px;
+  margin-right: 5px;
+}
+
+.modal-dish-name-h {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 1px 0 1px 0;
+}
+
+ion-list#selection-list {
+  max-height: 50vh;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+ion-popover ion-content::part(scroll) {
+  overflow: hidden;
+  text-align: center;
+}

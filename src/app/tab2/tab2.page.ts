@@ -1,20 +1,28 @@
 import { DishType } from './types';
 import { GenshinDish, GenshinDishes } from './../GenshinDishes';
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 
 import * as _ from 'lodash';
+import { IonModal } from '@ionic/angular';
+
+let parseInt: any;
 
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss'],
 })
-export class Tab2Page {
+export class Tab2Page implements AfterViewInit {
+  objectKeys = Object.keys;
+  @ViewChild('modal') modal: IonModal | undefined;
   genshinDishes: GenshinDish[];
   dishesByType: any = {};
   dishesByTypeCache: any = {};
   dishTypes: DishType[];
   searchQuery = '';
+  isRecipeModalOpen: boolean;
+  selectedDishes: GenshinDish[];
+  totalHarvest: any;
   constructor() {
     this.genshinDishes = GenshinDishes;
     this.dishesByType = _.groupBy(this.genshinDishes, 'type');
@@ -22,6 +30,12 @@ export class Tab2Page {
     this.dishTypes = Object.keys(this.dishesByType).map((e) => {
       return { name: e, qty: 0 };
     });
+    this.isRecipeModalOpen = false;
+    this.selectedDishes = [];
+    this.totalHarvest = [];
+  }
+  ngAfterViewInit(): void {
+    console.log(this.modal);
   }
 
   searchQueried(event: Event) {
@@ -53,6 +67,19 @@ export class Tab2Page {
 
     item.quantity = !item.quantity ? 1 : item.quantity + 1;
     dishType.qty += 1;
+
+    for (let ingredient of item.recipe) {
+      if (this.totalHarvest[ingredient.ingredient] != undefined) {
+        this.totalHarvest[ingredient.ingredient] += ingredient.quantity;
+      } else {
+        this.totalHarvest[ingredient.ingredient] = ingredient.quantity;
+      }
+    }
+
+    if (item.quantity == 1) {
+      this.selectedDishes.push(item);
+    }
+    this.isRecipeModalOpen = true;
   }
 
   removeIngredient(
@@ -68,6 +95,18 @@ export class Tab2Page {
 
     item.quantity -= 1;
     dishType.qty -= 1;
+
+    for (let ingredient of item.recipe) {
+      this.totalHarvest[ingredient.ingredient] -= ingredient.quantity;
+    }
+
+    if (item.quantity == 0) {
+      _.remove(this.selectedDishes, item);
+
+      if (this.selectedDishes.length == 0) {
+        this.isRecipeModalOpen = false;
+      }
+    }
   }
 
   clearAllSelections($event: Event, dishType: DishType) {
@@ -75,5 +114,27 @@ export class Tab2Page {
       e.quantity = 0;
     });
     dishType.qty = 0;
+    this.isRecipeModalOpen = false;
+    this.selectedDishes = [];
+    this.totalHarvest = [];
+  }
+
+  modalIsDismissing(event: Event, modal: IonModal) {
+    if (this.selectedDishes.length > 0) {
+      modal.setCurrentBreakpoint(0.25);
+    }
+  }
+
+  canModalDismiss(event: Event): Promise<boolean> {
+    if (this.selectedDishes.length > 0) {
+      this.modal?.setCurrentBreakpoint(0.25);
+      return new Promise((resolve, reject) => {
+        resolve(false);
+      });
+    } else {
+      return new Promise((resolve, reject) => {
+        resolve(true);
+      });
+    }
   }
 }

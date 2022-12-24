@@ -51,4 +51,77 @@
 
     </div>
   </div>
+
+
+
+
+  <ion-modal #modal [canDismiss]="canModalDismiss.bind(this)" (ionModalWillDismiss)="modalIsDismissing($event, modal)"
+    [isOpen]="isRecipeModalOpen" [backdropBreakpoint]="0.25" [initialBreakpoint]="0.25"
+    [breakpoints]="[0, 0.25, 0.5, 0.75, 1.0]">
+    <ng-template>
+      <ion-content class="ion-padding">
+
+        <ion-list id="selection-list">
+          <!-- <ion-item *ngFor="let dish of selectedDishes" lines="none">
+            <ion-label>
+              <h3>{{ dish.name }}</h3>
+              <p>Recipe</p>
+            </ion-label>
+          </ion-item> -->
+          <ion-item *ngFor="let dish of selectedDishes" lines="none">
+            <ion-avatar slot="start">
+              <ion-img [src]="'../../assets/genshin-food-images/' + dish.name + '.png'"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <h3 class="modal-dish-name-h"><ion-badge class="modal-dish-qty-badge">{{ dish.quantity
+                  }}</ion-badge>{{ dish.name }}</h3>
+              <p class="modal-recipe-p">
+                <span *ngFor="let ingredient of dish.recipe">
+                  {{ ingredient.quantity * (dish.quantity || 0 * 1) }}&nbsp;{{ ingredient.ingredient
+                  + ',' }}&nbsp;
+                </span>
+              </p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Total Harvest</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <ion-list id="harvest-list">
+
+              <ion-item *ngFor="let ingredient of objectKeys(totalHarvest)" lines="none">
+                <ion-avatar slot="start">
+                  <ion-img
+                    [src]="'../../assets/genshin-item-images/' + ingredient.replace(' ', '_') + '.png'"></ion-img>
+                </ion-avatar>
+                <ion-label>
+                  <h3 class="modal-dish-name-h"><ion-badge class="modal-dish-qty-badge">{{ totalHarvest[ingredient]
+                      }}</ion-badge>{{ ingredient }}</h3>
+                  <p class="modal-recipe-p">
+                    <!-- <span *ngFor="let ingredient of dish.recipe">
+                      {{ ingredient.quantity * (dish.quantity || 0 * 1) }}&nbsp;{{ ingredient.ingredient
+                      + ',' }}&nbsp;
+                    </span> -->
+                  </p>
+                </ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+
+          <ion-button id="click-trigger" style="margin-top:10px" expand="block">
+            <ion-icon slot="start" name="map-outline"></ion-icon>
+            Map Farming Route</ion-button>
+          <ion-popover trigger="click-trigger" triggerAction="click">
+            <ng-template>
+              <ion-content class="ion-padding">Coming Soon</ion-content>
+            </ng-template>
+          </ion-popover>
+        </ion-card>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
 </ion-content>
